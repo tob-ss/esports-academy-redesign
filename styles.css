@@ -1,0 +1,128 @@
+:root{
+    --main-padding:5px;
+}
+body{
+    margin: 0;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.2fr 1.3fr 1fr 0.8fr 0.4fr 0.3fr;
+    grid-template-areas: 
+        "navbar navbar navbar navbar"
+        "main main main main"
+        "content1 content1 content1 content1"
+        "content2 content2 content2 content2"
+        "content3 content3 content3 content3"
+        "footer footer footer footer"
+}
+
+#navbar {
+    width: 100vw;
+    background: #1F2937;
+    margin: 0;
+    position: fixed;
+    z-index: 9;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    height: 3em;
+    padding: 0;
+}
+
+#navbar ul li {
+    padding-right: 2em;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#navbar ul li:first-child {
+    margin-right: auto;
+    margin-left: 2em;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1F2937;
+    grid-area: main;
+    padding-top: var(--main-padding)
+}
+
+.signup {
+    background-color: #000000;
+    color: white;
+  padding: 5px 100px;
+  margin: 50px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 25%;
+  opacity: 0.9;
+}
+
+.container1{
+    display; flex:
+    justify-content: end;
+    padding-left: 150px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.container2 img{
+    max-width: 50%;
+    border-radius: 5px;
+}
+
+#content1{
+    background: #C5DCFB;
+    padding-left: 150px;
+    justify-content: end;
+    align-items: center;
+    grid-area: content1;
+    padding-top: var(--main-padding)
+}
+
+.container3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #1F2937
+}
+
+#content2{
+    background: #F6F8FB;
+    grid-area: content2;
+    padding-top: var(--main-padding)
+}
+
+#content3{
+    background: #FFFFFF;
+    grid-area: content3;
+    padding-top: var(--main-padding)
+}
+
+footer{
+    background: #1F2937;
+    grid-area: footer;
+    padding-top: var(--main-padding) 
+}
