@@ -30,8 +30,8 @@
 }
 
 #navbar__logo {
-    background-color: #4A00E0;
-    background-image: linear-gradient(to top, #4A00E0 0%, #8E2DE2 100%);
+    background-color: #fff;
+    background-image: #fff;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -95,6 +95,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
     color: #9518fb;
     transition: all 0.3s ease;
 }
+
 
 @media screen and (max-width: 960px) {
     .navbar__container {
@@ -313,7 +314,14 @@ background-size: 100%;
     text-align: center;
 }
 
-.content1 h1 {
+.content1__heading {
+    font-size: 50px;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+
+.content1__heading span {
     background-color: #4A00E0;
     background-image: linear-gradient(to top, #4A00E0 0%, #8E2DE2 100%);
     background-size: 100%;
@@ -322,9 +330,7 @@ background-size: 100%;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     margin-bottom: 5rem;
-    font-size: 2.5rem;
 }
-
 
 .content1__wrapper {
     display: grid;
@@ -370,4 +376,164 @@ background-size: 100%;
     transform: scale(1.075);
     transition: 0.3s ease-in;
     cursor: pointer;
+}
+
+.content2 {
+    background-color: #131314;
+    padding: 10rem 0;
+}
+
+.content2__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.content2__content {
+    color: #fff;
+    width: 100%;
+}
+
+.content2__content h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.content2__content p {
+    text-align: center;
+}
+
+.content2__media--container {
+    text-align: center;
+}
+
+.content2__media--card {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .content2__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90%;
+    }
+    
+    .content2__media--container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content2__media--card {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+
+    .content2__media--card iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .content2__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+}
+
+.content3__media--container {
+    text-align: center;
+}
+
+.content3__media--card {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 750px;
+}
+
+.content3 {
+    background-color: #131314;
+    padding: 10rem 0;
+}
+
+.content3__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.content3__content {
+    color: #fff;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.content3__content h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.content3__content p {
+    text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .content3__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90%;
+    }
+    
+    .content3__media--container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content3__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 602px) {
+    .content3__media--card {
+        max-width: 250px;
+    }
+    
 }
