@@ -2,24 +2,78 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
         <title>eSports Academy</title>
         <link rel="stylesheet" href="styles.css">
     </head>
 
-
-    <div class="container">
-        <div id="navbar">
-             <ul>
-                <li>eSports Academy</li>
-                <li>Valorant</li>
-                <li>Courses</li>
-                <li>Register</li>
-                <li>Login</li>
+    <body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">eSports Academy</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+             <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#valorant" class="navbar__links" id="valorant-page">Valorant</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#courses" class="navbar__links" id="courses-page">Courses</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#sign-up" class="button" id="signup">Sign Up</a>
+                </li>
              </ul>
         </div>
+        </nav>
 
+        <div class="main" id="home">
+            <div class="main__container">
+                <h1 class="main__heading">Become a <span>Pro Gamer</span></h1>
+                <p class="main__description">Learn from the very best</p>
+                <button class="main__btn"><a href="#">Sign Up</a></button>
+            </div>
+        </div>
+
+        <div class="content1" id="content1">
+            <h1>The greatest plays from the greatest players</h1>
+            <div class="content1__wrapper">
+                <div class="content1__card">
+                    <img src="images/600px-100_Thieves_Derrek_at_the_VALORANT_Champions_2022.jpg">
+                    <h3>100 Thieves</h3>
+                    <p>Derrek</p>
+                </div>
+                <div class="content1__card">
+                    <img src="images/Nivera_at_the_Masters_Reykjavík_2022.jpg">
+                    <h3>Team Liquid</h3>
+                    <p>Nivera</p>
+                </div>
+                <div class="content1__card">
+                    <img src="images/tarik-twitch-stats.webp">
+                    <h3>Former Pro</h3>
+                    <p>Tarik</p>
+                </div>
+                <div class="content1__card">
+                    <img src="images/Fnatic_Derke_at_the_VALORANT_Champions_2022.jpg">
+                    <h3>Fnatic</h3>
+                    <p>Derke</p>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+    </html>
             
-        <main> 
+       <!---<main> 
             <div class="container1">
                 <h2> Become a Pro Gamer</h2>
                 <p> Learn from the very best and improve your skills</p>
@@ -48,4 +102,5 @@
         <div id="content3">Content3</div>
         <footer>Footer</footer>
     </div>
-</html>
+</body>
+</html>--> 
