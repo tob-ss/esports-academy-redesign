@@ -210,8 +210,8 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 }
 
 .main__heading {
-    font-size: 100px;
-    margin-bottom: 24px;
+    font-size: 80px;
+    margin-bottom: 56px;
     color: #fff;
 }
 
@@ -227,7 +227,7 @@ background-size: 100%;
 }
 
 .main__description {
-    font-size: 60px;
+    font-size: 45px;
     background: #b92b27;
     background: -webkit-linear-gradient(
         to right,
@@ -244,6 +244,16 @@ background-size: 100%;
 -moz-background-clip: text;
 -webkit-text-fill-color: transparent;
 -mo-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+    .main__heading {
+        font-size: 40px;
+    }
+
+    .main__description {
+        font-size: 25px;
+    }
 }
 
 .highlight {
@@ -294,15 +304,7 @@ background-size: 100%;
 }
 
 
-@media screen and (max width: 768px) {
-    .main__heading {
-        font-size: 60px;
-    }
 
-    .main__description {
-        font-size: 40px;
-    }
-}
 
 .content1 {
     background: #131314;
@@ -321,6 +323,13 @@ background-size: 100%;
     color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+
+    .content1__heading {
+        font-size: 25px;
+    }
+    
+}
 
 .content1__heading span {
     background-color: #4A00E0;
@@ -536,6 +545,7 @@ background-size: 100%;
 @media screen and (max-width: 860px) {
     .content3__media--card {
         max-width: 300px;
+        max-height: auto;
     }
 }
 
